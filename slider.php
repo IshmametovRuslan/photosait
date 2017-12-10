@@ -6,13 +6,13 @@
 	</ol>
 	<div class="carousel-inner">
 		<div class="active item">
-			<img src="images/slider-images/slide_1.jpg" >
+			<img src="images/slider-images/cat-2971067_1280.jpg" width="100%" height="100%">
 		</div>
 		<div class="item">
-			<img src="images/slider-images/slide_2.jpg">
+			<img src="images/slider-images/photographer-2959776_1280.jpg" width="100%" height="100%">
 		</div>
 		<div class="item">
-			<img src="images/slider-images/slide_3.jpeg">
+			<img src="images/slider-images/classic-car-3000200_1280.jpg" width="100%" height="100%">
 		</div>
 	</div>
 	<a class="carousel-control left" href="#myCarousel" data-slide="prev">

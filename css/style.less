@@ -8,7 +8,15 @@ div:before, div:after {
 	display: block;
 	clear: both;
 }
-.carousel > .carousel-inner > .item > img {
-	height: 100%;
-	margin: auto;
+
+.carousel {
+	.item {
+		overflow: hidden;
+		height: 100%;
+		img {
+
+			margin: auto;
+		}
+	}
+
 }
