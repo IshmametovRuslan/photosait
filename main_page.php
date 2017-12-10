@@ -9,5 +9,7 @@
 			<div class="close"></div>
 		</div>
 	</div>
-	<div class="page_content"></div>
+	<div class="page_content">
+		
+	</div>
 </div>
