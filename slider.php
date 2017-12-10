@@ -1,26 +1,39 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!-- Карусель -->
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+	<!-- Индикаторы для карусели -->
 	<ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		<!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+		<li data-target="#myCarousel" data-slide-to="2"></li>
 	</ol>
-	<div class="carousel-inner" role="listbox">
-		<div class="carousel-item active">
-			<img src="images/slider-images/slide_1.jpg" alt="First slide">
+	<!-- Слайды карусели -->
+	<div class="carousel-inner">
+		<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+		<div class="active item">
+			<img src="images/slider-images/slide_1.jpg" >
 		</div>
-		<div class="carousel-item">
-			<img src="images/slider-images/slide_2.jpg" alt="Second slide">
+		<!-- Слайд №2 -->
+		<div class="item">
+			<img src="images/slider-images/slide_2.jpg">
 		</div>
-		<div class="carousel-item">
-			<img src="images/slider-images/slide_3.jpeg" alt="Third slide">
+		<!-- Слайд №3 -->
+		<div class="item">
+			<img src="images/slider-images/slide_3.jpeg">
 		</div>
+
+		<!-- сюда добавляем еще код слайдера-->
+
 	</div>
-	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		<span class="icon-prev" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
+	<!-- Навигация для карусели -->
+	<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+
 	</a>
-	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		<span class="icon-next" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
+	<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+
 	</a>
 </div>

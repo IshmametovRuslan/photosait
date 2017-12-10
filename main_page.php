@@ -10,6 +10,6 @@
 		</div>
 	</div>
 	<div class="page_content">
-		
+		<?php include 'slider.php';?>
 	</div>
 </div>
