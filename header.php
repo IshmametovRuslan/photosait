@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="javascript/jquery-3.2.1.min.js"></script>
-	<script src="javascript/bootstrap.js"></script>
+	<!--<script src="javascript/bootstrap.js"></script>-->
 	<script src="javascript/script.js"></script>
 	<title>My photogallery</title>
 </head>
