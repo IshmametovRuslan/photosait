@@ -1,3 +1,4 @@
 <p>Hello</p>
+<script type="text/javascript" src="javascript/script.js"></script>
 </body>
 </html>

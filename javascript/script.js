@@ -3,6 +3,8 @@ var slideCount = $('#slidewrapper').children().length;
 var slideInterval = 3000;
 var navBtnId = 0;
 var translateWidth = 0;
+console.log(slideCount);
+console.log(slideNow);
 
 $(document).ready(function() {
 	var switchInterval = setInterval(nextSlide, slideInterval);
