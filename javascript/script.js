@@ -44,7 +44,7 @@ function nextSlide() {
 		$('#slidewrapper').css('transform', 'translate(0, 0)');
 		slideNow = 1;
 	} else {
-		translateWidth = $('#viewport').width() * (slideNow);
+		translateWidth = -$('#viewport').width() * (slideNow);
 		$('#slidewrapper').css({
 			'transform': 'translate(' + translateWidth + 'px, 0)',
 			'-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
@@ -56,7 +56,7 @@ function nextSlide() {
 
 function prevSlide() {
 	if (slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-		translateWidth = $('#viewport').width() * (slideCount - 1);
+		translateWidth = -$('#viewport').width() * (slideCount - 1);
 		$('#slidewrapper').css({
 			'transform': 'translate(' + translateWidth + 'px, 0)',
 			'-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
