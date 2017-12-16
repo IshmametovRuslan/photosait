@@ -9,14 +9,16 @@
 			<div class="close"></div>
 		</div>
 	</div>
-	<div class="name_site">
-		<h2>Ишмаметов Руслан</h2>
-		<h3>Галерея фотографий</h3>
-	</div>
-	<div class="button_gallery">
-		<input type="button" value="GALLERY">
+	<div class="mainPageText">
+		<div class="name_site">
+			<h2>Ишмаметов Руслан</h2>
+			<h3>Галерея фотографий</h3>
+		</div>
+		<div class="button_gallery">
+			<input type="button" value="GALLERY">
+		</div>
 	</div>
 	<div class="page_content">
-		<?php include 'slider.php';?>
+		<?php include 'slider.php'; ?>
 	</div>
 </div>
