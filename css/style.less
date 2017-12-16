@@ -36,9 +36,6 @@ body {
 				list-style: none;
 				display: inline;
 				float: left;
-				.slide-img {
-					width: 100%;
-				}
 			}
 			ul {
 				margin: 0;
@@ -54,6 +51,10 @@ body {
 			position: absolute;
 			width: 100px;
 			height: 100%;
+			background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 39%, rgba(0,0,0,0) 100%);
+			background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 39%,rgba(0,0,0,0) 100%);
+			background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 39%,rgba(0,0,0,0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
 			opacity: 0.5;
 
 		}
@@ -62,6 +63,10 @@ body {
 			position: absolute;
 			width: 100px;
 			height: 100%;
+			background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 19%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+			background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 19%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%);
+			background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 19%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
 			opacity: 0.5;
 
 		}
@@ -75,33 +80,21 @@ body {
 			padding: 0;
 			margin: 0;
 			text-align: center;
-			.slide-nav-btn {
-				position: relative;
-				display: inline-block;
-				list-style: none;
-				width: 20px;
-				height: 20px;
-				background-color: #fff;
-				border-radius: 50%;
-				margin: 3px;
-			}
-			& .slide-nav-btn:hover {
-				cursor: pointer;
-			}
 		}
 
 	}
 }
+.slide-nav-btn {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 3px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.slide-nav-btn:hover {
+	cursor: pointer;
+}

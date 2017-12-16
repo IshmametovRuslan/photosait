@@ -9,7 +9,7 @@
 			<div class="close"></div>
 		</div>
 	</div>
-	<div class="mainPageText">
+	<div class="main_page_text">
 		<div class="name_site">
 			<h2>Ишмаметов Руслан</h2>
 			<h3>Галерея фотографий</h3>
