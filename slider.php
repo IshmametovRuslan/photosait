@@ -1,22 +1,11 @@
-<div id="block-for-slider">
-	<div id="viewport">
-		<ul id="slidewrapper">
-			<li class="slide"><img src="https://hsto.org/files/8d4/b19/80d/8d4b1980d48c418090e2c4466d8c06e1.jpg" alt="1" class="slide-img"></li>
-			<li class="slide"><img src="https://hsto.org/files/ef1/3d7/97e/ef13d797e4c642c7a1d4b2b91f7ad7b3.jpg" alt="2" class="slide-img"></li>
-			<li class="slide"><img src="https://hsto.org/files/ec5/592/f1e/ec5592f1e814401eb38305682a8e88d4.jpg" alt="3" class="slide-img"></li>
-			<li class="slide"><img src="https://hsto.org/files/eda/61a/3c5/eda61a3c53db408d820643998d9acd81.jpg" alt="4" class="slide-img"></li>
-		</ul>
-
-		<div id="prev-next-btns">
-			<div id="prev-btn"></div>
-			<div id="next-btn"></div>
+<div class="container">
+	<div class="slider__container">
+		<div class="slider__box">
+			<div class="slide" style="background-image: url('images/slider-images/285449_pejzazh_vid_krasivo_kartinka_oboi_priroda_1920x1080_(www.GdeFon.ru).jpg')"></div>
+			<div class="slide" style="background-image: url('images/slider-images/4178065-mountain-reflections-HD.jpg')"></div>
+			<div class="slide" style="background-image: url('images/slider-images/fonstola.ru-79597.jpg')"></div>
+			<div class="slide" style="background-image: url('images/slider-images/IMG_490761.jpg"></div>
+			<div class="slide" style="background-image: url('images/slider-images/Lake-pier-mountains-sky-stars-night_1600x900.jpg"></div>
 		</div>
-
-		<ul id="nav-btns">
-			<li class="slide-nav-btn"></li>
-			<li class="slide-nav-btn"></li>
-			<li class="slide-nav-btn"></li>
-			<li class="slide-nav-btn"></li>
-		</ul>
 	</div>
 </div>
