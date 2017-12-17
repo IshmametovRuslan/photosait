@@ -7,11 +7,29 @@
 		width: calc(@image_width * 5 + 1000);
 	}
 	.slide {
-		width: 1366px;
+		float: left;
 		height: 100vh;
 		min-height: 400px;
 		background-position: center center;
 		background-size: cover;
+	}
+	.nav__button{
+		position: relative;
+		.next__button{
+			position: absolute;
+			right: 0px;
+			width: 100px;
+			height: 100vh;
+		}
+		.prev__button{
+			position: absolute;
+			left: 0px;
+			width: 100px;
+			height: 100vh;
+		}
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 }

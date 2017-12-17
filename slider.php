@@ -9,4 +9,8 @@
 		<div class="slide"
 		     style="background-image: url('images/slider-images/Lake-pier-mountains-sky-stars-night_1600x900.jpg"></div>
 	</div>
+	<div class="nav__button">
+		<div class="next__button">next</div>
+		<div class="prev__button">perv</div>
+	</div>
 </div>
