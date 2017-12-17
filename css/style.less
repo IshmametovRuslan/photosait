@@ -1,4 +1,9 @@
 @image_width: image-width('../images/slider-images/285449_pejzazh_vid_krasivo_kartinka_oboi_priroda_1920x1080_(www.GdeFon.ru).jpg');
+.gradient(@direction){
+	background: linear-gradient(@direction, rgba(0,0,0,1) 0%,rgba(0,0,0,0.99) 1%,rgba(0,0,0,0) 100%);
+}
+
+
 .slider__container {
 	overflow: hidden;
 	margin: 0 auto;
@@ -18,14 +23,16 @@
 		.next__button, .prev__button{
 			display: table;
 			position: absolute;
-			width: 100px;
+			width: 200px;
 			height: 100vh;
 		}
 		.next__button{
 			right: 0px;
+			.gradient(to left);
 		}
 		.prev__button{
 			left: 0px;
+			.gradient(to right)
 		}
 		& .vertical_align{
 			display: table-cell;
