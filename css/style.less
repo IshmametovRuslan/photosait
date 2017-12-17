@@ -15,17 +15,21 @@
 	}
 	.nav__button{
 		position: relative;
-		.next__button{
+		.next__button, .prev__button{
+			display: table;
 			position: absolute;
-			right: 0px;
 			width: 100px;
 			height: 100vh;
 		}
+		.next__button{
+			right: 0px;
+		}
 		.prev__button{
-			position: absolute;
 			left: 0px;
-			width: 100px;
-			height: 100vh;
+		}
+		& .vertical_align{
+			display: table-cell;
+			vertical-align: middle;
 		}
 		&:hover {
 			cursor: pointer;
