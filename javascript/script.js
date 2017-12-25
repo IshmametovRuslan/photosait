@@ -22,4 +22,20 @@ $( document ).ready( function () {
 	$( '.prev__button' ).on( 'click', function () {
 		slideshow( slider_index - 1 );
 	} )
+
+	var navBtnId = 0;
+
+	$('.slide-nav-btn').click(function() {
+		navBtnId = $(this).index();
+
+		if (navBtnId + 1 != slideNow) {
+			translateWidth = -$('.slider__container').width() * (navBtnId);
+			$('.slider__box').css({
+				'transform': 'translate(' + translateWidth + 'px, 0)',
+				'-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
+				'-ms-transform': 'translate(' + translateWidth + 'px, 0)',
+			});
+			slideNow = navBtnId + 1;
+		}
+	});
 } )
