@@ -13,11 +13,10 @@
 		<div class="next__button"><div class="vertical_align"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div></div>
 		<div class="prev__button"><div class="vertical_align"></div></div>
 	</div>
-	<ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"><a href="#slide_1"></a></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"><a href="#slide_2"></a></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"><a href="#slide_3"></a></li>
-		<li data-target="#carousel-example-generic" data-slide-to="3"><a href="#slide_4"></a></li>
-		<li data-target="#carousel-example-generic" data-slide-to="4"><a href="#slide_5"></a></li>
-	</ol>
+	<ul id="nav-btns">
+		<li class="slide-nav-btn"></li>
+		<li class="slide-nav-btn"></li>
+		<li class="slide-nav-btn"></li>
+		<li class="slide-nav-btn"></li>
+	</ul>
 </div>
