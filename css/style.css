@@ -2,10 +2,11 @@
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
-  /*.slider__box {
-		width: calc(@image_width * 5);
-	}*/
+
 }
+.slider__box {
+   width: calc(@image_width * 5);
+ }
 .slider__container .slide {
   float: left;
   height: 100%;
