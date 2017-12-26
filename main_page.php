@@ -9,7 +9,7 @@
 			<div class="close"></div>
 		</div>
 	</div>
-	<!--<div class="main_page_text">
+	<div class="main_page_text">
 		<div class="vertical_align">
 			<div class="name_site">
 				<h1>Ишмаметов Руслан</h1>
@@ -19,7 +19,7 @@
 				<button type="button" class="btn btn-outline-secondary">Галерея</button>
 			</div>
 		</div>
-	</div>-->
+	</div>
 	<div class="page_content">
 		<?php include 'slider.php'; ?>
 	</div>
