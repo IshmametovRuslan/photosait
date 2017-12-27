@@ -1,17 +1,27 @@
+<div class="button_menu">
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+</div>
+<div class="menu">
+	<nav>
+		<ul>
+			<li>
+				<a href="#" data-class='aboutus_is_visible'></a>
+			</li>
+			<li>
+				<a href="#" data-class='aboutus_is_visible'></a>
+			</li>
+			<li>
+				<a href="#" data-class='aboutus_is_visible'></a>
+			</li>
+			<li>
+				<a href="#" data-class='aboutus_is_visible'></a>
+			</li>
+		</ul>
+	</nav>
+</div>
 <div class="page text_center">
-	<div class="overlay">
-		<nav class="overlayMenu">
-			<ul role="menu">
-				<li><a href="#" role="menuitem">Parity</a></li>
-				<li><a href="#" role="menuitem">Abstract</a></li>
-				<li><a href="#" role="menuitem">Educated</a></li>
-				<li><a href="#" role="menuitem">Decorum</a></li>
-				<li><a href="#" role="menuitem">Tenuous</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div class="navBurger" role="navigation" id="navToggle"></div>
-
 	<div class="nav_open nav_close">
 		<div class="open"></div>
 		<div class="close"></div>
