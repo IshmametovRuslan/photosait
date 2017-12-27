@@ -59,6 +59,43 @@ body {
   -moz-transform: translateX(-100px);
   transform: translateX(-100px);
 }
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 800px;
+  overflow: hidden;
+  padding-left: 0;
+  transform: translateX(-150%);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-delay: .1s;
+}
+.menu ul {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+}
+.menu ul li {
+  margin: 0;
+  padding: 0;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  padding-left: 120px;
+  transform: translateX(0px);
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.menu ul li a:hover {
+  background: rgba(1, 1, 1, 0.3);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+}
 /*-----Слайдер карусель-----*/
 .slider__container {
   overflow: hidden;

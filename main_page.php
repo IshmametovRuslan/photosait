@@ -7,16 +7,16 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="#" data-class='aboutus_is_visible'></a>
+				<a href="#" data-class='home_is_visible'>Home</a>
 			</li>
 			<li>
-				<a href="#" data-class='aboutus_is_visible'></a>
+				<a href="#" data-class='aboutus_is_visible'>About</a>
 			</li>
 			<li>
-				<a href="#" data-class='aboutus_is_visible'></a>
+				<a href="#" data-class='clients_is_visible'>Clients</a>
 			</li>
 			<li>
-				<a href="#" data-class='aboutus_is_visible'></a>
+				<a href="#" data-class='contactus_is_visible'>Contact</a>
 			</li>
 		</ul>
 	</nav>
