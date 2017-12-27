@@ -9,11 +9,11 @@
 	margin: 0 auto;
 	width: 100%;
 	.slider__box {
-		width: calc((@image_width * 5) + 1000);
+		width: (@image_width * 5 + 10000)
 	}
 	.slide {
 		float: left;
-		height: 100%;
+		height: 100vh;
 		min-height: 400px;
 		background-position: center center;
 		background-size: cover;
@@ -40,6 +40,21 @@
 		}
 		&:hover {
 			cursor: pointer;
+		}
+	}
+}
+.main_page_text {
+	position: absolute;
+	text-align: center;
+	right: 30%;
+	top: 40%;
+	.name_site {
+		font-family: 'Pacifico', cursive;
+		h1 {
+			font-size: 5.5em;
+		}
+		h3 {
+			font-size: 3em;
 		}
 	}
 }

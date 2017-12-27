@@ -2,14 +2,13 @@
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
-
 }
-.slider__box {
-   width: calc(@image_width * 5);
- }
+.slider__container .slider__box {
+  width: 18000px;
+}
 .slider__container .slide {
   float: left;
-  height: 100%;
+  height: 100vh;
   min-height: 400px;
   background-position: center center;
   background-size: cover;
@@ -38,6 +37,21 @@
 }
 .slider__container .nav__button:hover {
   cursor: pointer;
+}
+.main_page_text {
+  position: absolute;
+  text-align: center;
+  right: 30%;
+  top: 40%;
+}
+.main_page_text .name_site {
+  font-family: 'Pacifico', cursive;
+}
+.main_page_text .name_site h1 {
+  font-size: 5.5em;
+}
+.main_page_text .name_site h3 {
+  font-size: 3em;
 }
 #nav-btns {
   position: absolute;
