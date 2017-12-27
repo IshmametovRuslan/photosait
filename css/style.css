@@ -46,12 +46,16 @@
 }
 .main_page_text .name_site {
   font-family: 'Pacifico', cursive;
+  color: #0c0c0c;
 }
 .main_page_text .name_site h1 {
   font-size: 5.5em;
 }
 .main_page_text .name_site h3 {
   font-size: 3em;
+}
+.main_page_text .button_gallery {
+  margin-top: 3em;
 }
 #nav-btns {
   position: absolute;

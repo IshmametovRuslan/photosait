@@ -16,7 +16,7 @@
 				<h3>Галерея фотографий</h3>
 			</div>
 			<div class="button_gallery">
-				<button type="button" class="btn btn-outline-secondary">Галерея</button>
+				<button type="button" class="btn btn-outline-secondary btn-lg">Галерея</button>
 			</div>
 		</div>
 	</div>
