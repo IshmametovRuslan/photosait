@@ -2,3 +2,5 @@ https://codepen.io/elmanifico45/pen/NvdxEE ссылка на меню бурге
 
 
 http://nisnom.com/kollektsiya-potryasayushhih-menyu-dlya-sajta-html-css-i-javascript-jquery/
+
+Необходимо установить компилятор SCSS
