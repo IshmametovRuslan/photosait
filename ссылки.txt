@@ -1,6 +1,6 @@
 https://codepen.io/elmanifico45/pen/NvdxEE ссылка на меню бургер
 
 
-http://nisnom.com/kollektsiya-potryasayushhih-menyu-dlya-sajta-html-css-i-javascript-jquery/
+http://nisnom.com/kollektsiya-potryasayushhih-menyu-dlya-sajta-html-css-i-javascript-jquery/ крутой сайт
 
 Необходимо установить компилятор SCSS
