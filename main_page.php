@@ -1,20 +1,14 @@
-<div class="page text_center content">
-	<input id="hamburger" class="hamburger" type="checkbox"/>
-	<label class="hamburger" for="hamburger">
-		<i></i>
-		<text>
-			<close>close</close>
-			<open>menu</open>
-		</text>
-	</label>
-	<section class="drawer-list">
-		<ul>
-			<li><a href="#">dashboard</a></li>
-			<li><a href="#">notifications</a></li>
-			<li><a href="#">system administration</a></li>
-			<li><a href="#">support</a></li>
-		</ul>
-	</section>
+<div class="page text_center">
+	<div class="page_menu">
+		<div class="nav_bar">
+			<div class="menu">
+			</div>
+		</div>
+		<div class="nav_open nav_close">
+			<div class="open"></div>
+			<div class="close"></div>
+		</div>
+	</div>
 	<div class="main_page_text">
 		<div class="vertical_align">
 			<div class="name_site">

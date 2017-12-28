@@ -1,43 +1,165 @@
-.slider__container {
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  background: #e9c85c;
+  transform: translateX(0px);
+  transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+body .nav_is_visible {
+  transform: translayeX(300px);
+}
+body .nav_is_visible .menu {
+  transform: translateX(-100%);
+}
+/*-----Кнопка меню-----*/
+.button_menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+  background: transparent;
+  width: 50px;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button_menu:hover {
+  cursor: pointer;
+}
+.button_menu .line {
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: #fff;
+  margin: 8px auto;
+}
+.button_menu .line:nth-child(1),
+.button_menu .line:nth-child(3) {
+  transform: rotate(0deg) translateY(0);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.button_menu .line:nth-child(2) {
+  transform: translateX(0);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.close .line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(15px);
+  -moz-transform: rotate(45deg) translateY(15px);
+  transform: rotate(45deg) translateY(15px);
+}
+.close .line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-15px);
+  -moz-transform: rotate(-45deg) translateY(-15px);
+  transform: rotate(-45deg) translateY(-15px);
+}
+.close .line:nth-child(2) {
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  transform: translateX(-100px);
+}
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 800px;
+  overflow: hidden;
+  padding-left: 0;
+  transform: translateX(-150%);
+  transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-delay: .1s;
+}
+.menu ul {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+}
+.menu ul li {
+  margin: 0;
+  padding: 0;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  padding-left: 120px;
+  transform: translateX(0px);
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.menu ul li a:hover {
+  background: rgba(1, 1, 1, 0.3);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.page_content {
+  position: absolute;
+  margin: 0 auto;
+  padding: 30px 20%;
+  font-size: 18px;
+  transform: translateX(100%);
+  transition: color 1s ease 1s, background 0.5s ease 1s, transform 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+}
+.page_content > h1 {
+  font-size: 60px;
+}
+.page_content p {
+  margin-bottom: 100px;
+  line-height: 2.4;
+}
+.page_content .slider__container {
+  transform: translateX(300%);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
 }
-.slider__container .slider__box {
+.page_content .slider__container .slider__box {
   width: 18000px;
 }
-.slider__container .slide {
+.page_content .slider__container .slide {
   float: left;
   height: 100vh;
   min-height: 400px;
   background-position: center center;
   background-size: cover;
 }
-.slider__container .nav__button {
+.page_content .slider__container .nav__button {
   position: relative;
 }
-.slider__container .nav__button .next__button,
-.slider__container .nav__button .prev__button {
+.page_content .slider__container .nav__button .next__button,
+.page_content .slider__container .nav__button .prev__button {
   display: table;
   position: absolute;
   width: 200px;
   height: 100vh;
 }
-.slider__container .nav__button .next__button {
+.page_content .slider__container .nav__button .next__button {
   right: 0px;
   background: linear-gradient(to left, #000000 0%, rgba(0, 0, 0, 0.99) 1%, rgba(0, 0, 0, 0) 100%);
 }
-.slider__container .nav__button .prev__button {
+.page_content .slider__container .nav__button .prev__button {
   left: 0px;
   background: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0.99) 1%, rgba(0, 0, 0, 0) 100%);
 }
-.slider__container .nav__button .vertical_align {
+.page_content .slider__container .nav__button .vertical_align {
   display: table-cell;
   vertical-align: middle;
 }
-.slider__container .nav__button:hover {
+.page_content .slider__container .nav__button:hover {
   cursor: pointer;
 }
+/*-----Слайдер карусель-----*/
 .main_page_text {
   position: absolute;
   text-align: center;
