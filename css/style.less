@@ -114,47 +114,68 @@ body {
 	}
 }
 
+.page_content {
+	position: absolute;
+	margin: 0 auto;
+	padding: 30px 20%;
+	font-size: 18px;
+	transform: translateX(100%);
+	transition: color 1s ease 1s, background 0.5s ease 1s, transform 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+	&>h1 {
+		font-size: 60px;
+
+	}
+	p {
+		margin-bottom: 100px;
+		line-height: 2.4;
+	}
+	.slider__container {
+		transform:translateX(300%);
+		transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		overflow: hidden;
+		margin: 0 auto;
+		width: 100%;
+		.slider__box {
+			width: (@image_width * 5 + 10000)
+		}
+		.slide {
+			float: left;
+			height: 100vh;
+			min-height: 400px;
+			background-position: center center;
+			background-size: cover;
+		}
+		.nav__button {
+			position: relative;
+			.next__button, .prev__button {
+				display: table;
+				position: absolute;
+				width: 200px;
+				height: 100vh;
+			}
+			.next__button {
+				right: 0px;
+				.gradient(to left);
+			}
+			.prev__button {
+				left: 0px;
+				.gradient(to right)
+			}
+			& .vertical_align {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+}
+
 /*-----Слайдер карусель-----*/
 
-.slider__container {
-	overflow: hidden;
-	margin: 0 auto;
-	width: 100%;
-	.slider__box {
-		width: (@image_width * 5 + 10000)
-	}
-	.slide {
-		float: left;
-		height: 100vh;
-		min-height: 400px;
-		background-position: center center;
-		background-size: cover;
-	}
-	.nav__button {
-		position: relative;
-		.next__button, .prev__button {
-			display: table;
-			position: absolute;
-			width: 200px;
-			height: 100vh;
-		}
-		.next__button {
-			right: 0px;
-			.gradient(to left);
-		}
-		.prev__button {
-			left: 0px;
-			.gradient(to right)
-		}
-		& .vertical_align {
-			display: table-cell;
-			vertical-align: middle;
-		}
-		&:hover {
-			cursor: pointer;
-		}
-	}
-}
+
 
 .main_page_text {
 	position: absolute;
