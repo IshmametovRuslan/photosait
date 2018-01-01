@@ -1,5 +1,5 @@
 <div class="page text_center">
-	<div class="page_menu">
+<!--	<div class="page_menu">
 		<div class="nav_bar">
 			<div class="menu">
 			</div>
@@ -19,7 +19,7 @@
 				<button type="button" class="btn btn-outline-secondary btn-lg">Галерея</button>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<div class="page_content">
 		<?php include 'slider.php'; ?>
 	</div>
