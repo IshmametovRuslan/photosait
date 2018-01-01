@@ -1,3 +1,5 @@
+/*$prev-icon: "Prev";
+$next-icon: "Next";*/
 /*
  * ===== MIXINS =====
  *
@@ -96,7 +98,6 @@
     -ms-transform: translateX(-100%);
     transform: translateX(-100%); }
     [data-am-fadeshow] .fs-prev-btn:before {
-      content: "Prev";
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -115,7 +116,6 @@
     -ms-transform: translateX(100%);
     transform: translateX(100%); }
     [data-am-fadeshow] .fs-next-btn:before {
-      content: "Next";
       right: 50%;
       -webkit-transform: translate(50%, -50%);
       -ms-transform: translate(50%, -50%);
