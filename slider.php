@@ -1,22 +1,7 @@
-<div class="slider__container">
-	<div class="slider__box">
-		<div class="slide" id="slide_1"
-		     style="background-image: url('images/slider-images/285449_pejzazh_vid_krasivo_kartinka_oboi_priroda_1920x1080_(www.GdeFon.ru).jpg')" ></div>
-		<div class="slide" id="slide_2"
-		     style="background-image: url('images/slider-images/4178065-mountain-reflections-HD.jpg')"></div>
-		<div class="slide" id="slide_3" style="background-image: url('images/slider-images/fonstola.ru-79597.jpg')"></div>
-		<div class="slide" id="slide_4" style="background-image: url('images/slider-images/IMG_490761.jpg"></div>
-		<div class="slide" id="slide_5"
-		     style="background-image: url('images/slider-images/Lake-pier-mountains-sky-stars-night_1600x900.jpg"></div>
-	</div>
-	<div class="nav__button">
-		<div class="next__button"><div class="vertical_align"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div></div>
-		<div class="prev__button"><div class="vertical_align"></div></div>
-	</div>
-	<ul id="nav-btns">
-		<li class="slide-nav-btn"></li>
-		<li class="slide-nav-btn"></li>
-		<li class="slide-nav-btn"></li>
-		<li class="slide-nav-btn"></li>
-	</ul>
-</div>
+<div id="app"></div>
+<a href="https://dribbble.com/shots/3774469-T-R-A-V-E-L-E-R" target="_blank" class="icon-link">
+	<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+</a>
+<a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+	<img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+</a>
