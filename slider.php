@@ -10,5 +10,11 @@
 			<div id="prev-btn"></div>
 			<div id="next-btn"></div>
 		</div>
+		<ul id="nav-btns">
+			<li class="slide-nav-btn"></li>
+			<li class="slide-nav-btn"></li>
+			<li class="slide-nav-btn"></li>
+			<li class="slide-nav-btn"></li>
+		</ul>
 	</div>
 </div>
