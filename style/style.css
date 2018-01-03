@@ -5,7 +5,7 @@ body {
 }
 body .main-page-text {
   position: absolute;
-  z-index: 999;
+  z-index: 1;
   display: table;
   min-width: 400px;
   width: 100%;
@@ -31,12 +31,12 @@ body .main-page-text div .gallery-btn {
   margin: 40px auto;
   display: block;
 }
-body #blockForSlider {
+body #block-for-slider {
   width: 100%;
   min-width: 400px;
   margin: 0 auto;
 }
-body #blockForSlider #viewport {
+body #block-for-slider #viewport {
   width: 100%;
   display: table;
   position: relative;
@@ -47,7 +47,7 @@ body #blockForSlider #viewport {
   -o-user-select: none;
   user-select: none;
 }
-body #blockForSlider #viewport #slidewrapper {
+body #block-for-slider #viewport #slidewrapper {
   position: relative;
   width: calc(400%);
   top: 0;
@@ -61,25 +61,26 @@ body #blockForSlider #viewport #slidewrapper {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-body #blockForSlider #viewport #slidewrapper ul,
-body #blockForSlider #viewport #slidewrapper li {
+body #block-for-slider #viewport #slidewrapper ul,
+body #block-for-slider #viewport #slidewrapper li {
   margin: 0;
   padding: 0;
 }
-body #blockForSlider #viewport #slidewrapper li {
+body #block-for-slider #viewport #slidewrapper li {
   width: calc(25%);
   list-style: none;
   display: inline;
   float: left;
 }
-body #blockForSlider #viewport #slidewrapper li .slideImg {
+body #block-for-slider #viewport #slidewrapper li .slide-img {
   width: 100%;
   height: 100vh;
   background-position: center center;
   background-size: cover;
 }
-body #blockForSlider #viewport #prevBtn,
-body #blockForSlider #viewport #nextBtn {
+body #block-for-slider #viewport #prev-btn,
+body #block-for-slider #viewport #next-btn {
+  z-index: 999;
   top: 0;
   position: absolute;
   width: 10%;
@@ -89,18 +90,18 @@ body #blockForSlider #viewport #nextBtn {
   cursor: pointer;
   text-align: center;
 }
-body #blockForSlider #viewport #prevBtn:hover,
-body #blockForSlider #viewport #nextBtn:hover {
+body #block-for-slider #viewport #prev-btn:hover,
+body #block-for-slider #viewport #next-btn:hover {
   transition: .3s;
   background-color: rgba(84, 84, 84, 0.8);
 }
-body #blockForSlider #viewport #prevBtn {
+body #block-for-slider #viewport #prev-btn {
   left: 0px;
 }
-body #blockForSlider #viewport #nextBtn {
+body #block-for-slider #viewport #next-btn {
   right: 0px;
 }
-body #blockForSlider #viewport #navBtns {
+body #block-for-slider #viewport #nav-btns {
   position: absolute;
   width: 100%;
   bottom: 20px;
@@ -108,7 +109,8 @@ body #blockForSlider #viewport #navBtns {
   margin: 0;
   text-align: center;
 }
-body #blockForSlider #viewport #navBtns .slideNavBtn {
+body #block-for-slider #viewport #nav-btns .slide-nav-btn {
+  z-index: 999;
   position: relative;
   display: inline-block;
   list-style: none;
@@ -118,9 +120,6 @@ body #blockForSlider #viewport #navBtns .slideNavBtn {
   border-radius: 50%;
   margin: 3px;
 }
-body #blockForSlider #viewport #navBtns .slideNavBtn:hover {
+body #block-for-slider #viewport #nav-btns .slide-nav-btn:hover {
   cursor: pointer;
-}
-body #blockForSlider #viewport #navBtns .slideNavBtn:active {
-  background-color: #747474;
 }
