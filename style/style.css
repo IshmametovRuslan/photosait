@@ -2,6 +2,17 @@
 body {
   margin: 0;
   padding: 0;
+  /* Стили для меню */
+  /* Стили для основной надписи */
+  /* Стили для слайдера */
+}
+body .main-menu {
+  position: absolute;
+  left: 0px;
+  width: 20%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
 }
 body .main-page-text {
   position: absolute;
