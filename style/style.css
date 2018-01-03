@@ -1,35 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Kurale|Prata|Rubik');
 body {
   margin: 0;
   padding: 0;
-}
-body .main-page-text {
-  position: absolute;
-  z-index: 999;
-  display: table;
-  min-width: 400px;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-}
-body .main-page-text div {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-body .main-page-text div h2 {
-  font-size: 4.5rem;
-  font-family: 'Prata', serif;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-}
-body .main-page-text div h3 {
-  font-size: 2.5rem;
-  font-family: 'Kurale', serif;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-}
-body .main-page-text div .gallery-btn {
-  margin: 40px auto;
-  display: block;
 }
 body #block-for-slider {
   width: 100%;
