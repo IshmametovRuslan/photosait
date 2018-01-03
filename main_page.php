@@ -4,7 +4,7 @@
 			<h2>Руслан Ишмаметов</h2>
 			<h3>Моя фотогалерея</h3>
 			<div class="gallery-btn">
-				<button class="gallery-btn">В галерею</button>
+				<button class="btn btn-outline-secondary btn-lg">В галерею</button>
 			</div>
 		</div>
 

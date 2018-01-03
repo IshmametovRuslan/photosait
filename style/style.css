@@ -5,7 +5,7 @@ body {
 }
 body .main-page-text {
   position: absolute;
-  z-index: 999;
+  z-index: 1;
   display: table;
   min-width: 400px;
   width: 100%;
@@ -80,6 +80,7 @@ body #block-for-slider #viewport #slidewrapper li .slide-img {
 }
 body #block-for-slider #viewport #prev-btn,
 body #block-for-slider #viewport #next-btn {
+  z-index: 999;
   top: 0;
   position: absolute;
   width: 10%;
@@ -109,6 +110,7 @@ body #block-for-slider #viewport #nav-btns {
   text-align: center;
 }
 body #block-for-slider #viewport #nav-btns .slide-nav-btn {
+  z-index: 999;
   position: relative;
   display: inline-block;
   list-style: none;
