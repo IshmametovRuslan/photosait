@@ -38,7 +38,7 @@ function prevSlide() {
 	}
 }
 
-$('.slide-nav-btn').click(function () {
+$('.slideNavBtn').click(function () {
 	navBtnId = $(this).index();
 	if (navBtnId + 1 != slideNow) {
 		translateWidth = -$('#viewport').width() * (navBtnId);
@@ -53,17 +53,17 @@ $('.slide-nav-btn').click(function () {
 $(document).ready(function () {
 	var switchInterval = setInterval(nextSlide, slideInterval);
 
-	$('.slide-img, #next-btn, #prev-btn, .slide-nav-btn').hover(function () {
+	$('.slideImg, #nextBtn, #prevBtn, .slideNavBtn').hover(function () {
 		clearInterval(switchInterval);
 	}, function () {
 		switchInterval = setInterval(nextSlide, slideInterval);
 	});
 
-	$('#next-btn').click(function() {
+	$('#nextBtn').click(function() {
 		nextSlide();
 	});
 
-	$('#prev-btn').click(function() {
+	$('#prevBtn').click(function() {
 		prevSlide();
 	});
 });
