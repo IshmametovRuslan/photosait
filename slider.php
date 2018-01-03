@@ -7,8 +7,10 @@
 			<li class="slide"><div style="background-image: url('images/slider-images/people-3025988.jpg')" alt="4" class="slide-img"></li>
 		</ul>
 		<div id="prev-next-btns">
-			<div id="prev-btn"></div>
-			<div id="next-btn"></div>
+			<div id="prev-btn">
+			</div>
+			<div id="next-btn">
+			</div>
 		</div>
 		<ul id="nav-btns">
 			<li class="slide-nav-btn"></li>
