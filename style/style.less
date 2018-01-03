@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	#block-for-slider {
+	#blockForSlider {
 		width: 100%;
 		min-width: 400px;
 		margin: 0 auto;
@@ -41,7 +41,7 @@ body {
 					display: inline;
 					float: left;
 
-					.slide-img {
+					.slideImg {
 						width: 100%;
 						height: 100vh;
 						background-position: center center;
@@ -49,7 +49,7 @@ body {
 					}
 				}
 			}
-			#prev-btn, #next-btn {
+			#prevBtn, #nextBtn {
 				top: 0;
 				position: absolute;
 				width: 10%;
@@ -64,20 +64,20 @@ body {
 					background-color: rgba(84, 84, 84, 0.8);
 				}
 			}
-			#prev-btn {
+			#prevBtn {
 				left: 0px;
 			}
-			#next-btn {
+			#nextBtn {
 				right: 0px;
 			}
-			#nav-btns {
+			#navBtns {
 				position: absolute;
 				width: 100%;
 				bottom: 20px;
 				padding: 0;
 				margin: 0;
 				text-align: center;
-				.slide-nav-btn {
+				.slideNavBtn {
 					position: relative;
 					display: inline-block;
 					list-style: none;
@@ -88,6 +88,9 @@ body {
 					margin: 3px;
 					&:hover {
 						cursor: pointer;
+					}
+					&:active {
+						background-color: #747474;
 					}
 				}
 			}

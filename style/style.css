@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
 }
-body #block-for-slider {
+body #blockForSlider {
   width: 100%;
   min-width: 400px;
   margin: 0 auto;
 }
-body #block-for-slider #viewport {
+body #blockForSlider #viewport {
   width: 100%;
   display: table;
   position: relative;
@@ -18,7 +18,7 @@ body #block-for-slider #viewport {
   -o-user-select: none;
   user-select: none;
 }
-body #block-for-slider #viewport #slidewrapper {
+body #blockForSlider #viewport #slidewrapper {
   position: relative;
   width: calc(400%);
   top: 0;
@@ -32,25 +32,25 @@ body #block-for-slider #viewport #slidewrapper {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-body #block-for-slider #viewport #slidewrapper ul,
-body #block-for-slider #viewport #slidewrapper li {
+body #blockForSlider #viewport #slidewrapper ul,
+body #blockForSlider #viewport #slidewrapper li {
   margin: 0;
   padding: 0;
 }
-body #block-for-slider #viewport #slidewrapper li {
+body #blockForSlider #viewport #slidewrapper li {
   width: calc(25%);
   list-style: none;
   display: inline;
   float: left;
 }
-body #block-for-slider #viewport #slidewrapper li .slide-img {
+body #blockForSlider #viewport #slidewrapper li .slideImg {
   width: 100%;
   height: 100vh;
   background-position: center center;
   background-size: cover;
 }
-body #block-for-slider #viewport #prev-btn,
-body #block-for-slider #viewport #next-btn {
+body #blockForSlider #viewport #prevBtn,
+body #blockForSlider #viewport #nextBtn {
   top: 0;
   position: absolute;
   width: 10%;
@@ -60,18 +60,18 @@ body #block-for-slider #viewport #next-btn {
   cursor: pointer;
   text-align: center;
 }
-body #block-for-slider #viewport #prev-btn:hover,
-body #block-for-slider #viewport #next-btn:hover {
+body #blockForSlider #viewport #prevBtn:hover,
+body #blockForSlider #viewport #nextBtn:hover {
   transition: .3s;
   background-color: rgba(84, 84, 84, 0.8);
 }
-body #block-for-slider #viewport #prev-btn {
+body #blockForSlider #viewport #prevBtn {
   left: 0px;
 }
-body #block-for-slider #viewport #next-btn {
+body #blockForSlider #viewport #nextBtn {
   right: 0px;
 }
-body #block-for-slider #viewport #nav-btns {
+body #blockForSlider #viewport #navBtns {
   position: absolute;
   width: 100%;
   bottom: 20px;
@@ -79,7 +79,7 @@ body #block-for-slider #viewport #nav-btns {
   margin: 0;
   text-align: center;
 }
-body #block-for-slider #viewport #nav-btns .slide-nav-btn {
+body #blockForSlider #viewport #navBtns .slideNavBtn {
   position: relative;
   display: inline-block;
   list-style: none;
@@ -89,6 +89,9 @@ body #block-for-slider #viewport #nav-btns .slide-nav-btn {
   border-radius: 50%;
   margin: 3px;
 }
-body #block-for-slider #viewport #nav-btns .slide-nav-btn:hover {
+body #blockForSlider #viewport #navBtns .slideNavBtn:hover {
   cursor: pointer;
+}
+body #blockForSlider #viewport #navBtns .slideNavBtn:active {
+  background-color: #747474;
 }
