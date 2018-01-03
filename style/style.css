@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Kurale|Prata|Rubik');
+@import "menuStyle.css";
 body {
   margin: 0;
   padding: 0;
-  /* Стили для меню */
   /* Стили для основной надписи */
   /* Стили для слайдера */
 }
 body .main-menu {
   position: absolute;
   left: 0px;
-  width: 20%;
+  width: 15%;
   height: 100%;
-  z-index: 9999;
-  background-color: #fff;
+  background-color: #000;
+  z-index: 10000;
 }
 body .main-page-text {
   position: absolute;

@@ -66,4 +66,10 @@ $(document).ready(function () {
 	$('#prevBtn').click(function() {
 		prevSlide();
 	});
+
+	//Клик по кнопке меню
+	
+	$('.menu-icon').click(function() {
+		$(this).toggleClass('active');
+	})
 });
