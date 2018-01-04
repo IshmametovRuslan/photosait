@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400);
 
 $body-color: #fff;
-$menu-background-color: #fff;
+$menu-background-color: #d3d3d3;;
 $menu-icons-color: #fff;
 $font-stack: 'Lato', sans-serif;
 
@@ -103,11 +103,15 @@ $font-stack: 'Lato', sans-serif;
       top: 8px;
     }
   }
+  .copy-main {
+    position: absolute;
+    bottom: -10px;
+    padding: 0 10px;
+  }
 }
 
 .menu-list {
   text-align: center;
-  background-color: #d3d3d3;
   list-style: none;
   font-size: 2rem;
   padding: 60px 20px;

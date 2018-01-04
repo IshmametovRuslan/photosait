@@ -23,7 +23,7 @@
   transform: translateX(-100%);
   transition: transform .3s .3s; }
   .navigation-menu::before {
-    background: #fff;
+    background: #d3d3d3;
     content: '';
     height: 400%;
     left: 50%;
@@ -83,10 +83,13 @@
   .navigation-menu__bars::after {
     left: 0;
     top: 8px; }
+  .navigation-menu .copy-main {
+    position: absolute;
+    bottom: -10px;
+    padding: 0 10px; }
 
 .menu-list {
   text-align: center;
-  background-color: #d3d3d3;
   list-style: none;
   font-size: 2rem;
   padding: 60px 20px;
@@ -114,7 +117,7 @@
       width: 110%; } }
 @media only screen and (max-width: 480px) {
   .navigation-menu {
-    background-color: #fff;
+    background-color: #d3d3d3;
     min-width: 240px;
     width: 80%; }
     .navigation-menu::before {

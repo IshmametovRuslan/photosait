@@ -8,4 +8,7 @@
 		<li class="menu-list__item"><a href="#">Блог</a></li>
 		<li class="menu-list__item"><a href="#">Контакты</a></li>
 	</ul>
+	<div class="copy-main">
+		<p>&copyIshmametov Ruslan 2017-2018</p>
+	</div>
 </nav>
