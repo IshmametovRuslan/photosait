@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+
+$body-color: #fff;
+$menu-background-color: #fff;
+$menu-icons-color: #fff;
+$font-stack: 'Lato', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+%bars {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: $menu-icons-color;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  transition: all .3s;
+}
+
+.navigation-menu {
+  z-index: 10000;
+  background-color: transparent;
+  height: 100%;
+  position: fixed;
+  width: 260px;
+  transform: translateX(-100%);
+  transition: transform .3s .3s;
+
+  &::before {
+    background: $menu-background-color;
+    content: '';
+    height: 400%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 0;
+  }
+
+  &--open {
+    transform: translateX(0);
+
+    & .navigation-menu__bars {
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .menu-list__item {
+      opacity: 1;
+    }
+
+    $menu-delay: 1s;
+    @for $i from 1 through 12 {
+      .menu-list__item:nth-child(#{$i}) {
+        transition-delay: $menu-delay;
+      }
+      $menu-delay: $menu-delay + .25s;
+    }
+  }
+
+  &__toggle {
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    right: -40px;
+    top: 5px;
+    width: 30px;
+  }
+
+  &__bars {
+    @extend %bars;
+
+    &::before,
+    &::after {
+      @extend %bars;
+      content: '';
+    }
+
+    &::before {
+      left: 0;
+      top: -8px;
+    }
+
+    &::after {
+      left: 0;
+      top: 8px;
+    }
+  }
+}
+
+.menu-list {
+  padding: 60px 20px;
+  position: relative;
+  z-index: 10;
+
+  &__item {
+    margin: 40px 0;
+    opacity: 0;
+    transition: opacity .5s .5s;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navigation-menu {
+    min-width: 240px;
+    width: 80%;
+
+    &::before {
+      width: 110%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navigation-menu {
+    background-color: $menu-background-color;
+    min-width: 240px;
+    width: 80%;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg)
+    }
+  }
+}
