@@ -3,7 +3,7 @@
 		<span class="navigation-menu__bars"></span>
 	</div>
 	<ul class="menu-list">
-		<li class="menu-list__item"><a href="#">Обо мне</a></li>
+		<li class="menu-list__item"><a href="about_me.php">Обо мне</a></li>
 		<li class="menu-list__item"><a href="#">Галерея</a></li>
 		<li class="menu-list__item"><a href="#">Блог</a></li>
 		<li class="menu-list__item"><a href="#">Контакты</a></li>
