@@ -62,7 +62,6 @@ $font-stack: 'Lato', sans-serif;
         transform: rotate(-45deg);
       }
     }
-
     .menu-list__item {
       opacity: 1;
     }
@@ -107,6 +106,10 @@ $font-stack: 'Lato', sans-serif;
 }
 
 .menu-list {
+  text-align: center;
+  background-color: #d3d3d3;
+  list-style: none;
+  font-size: 2rem;
   padding: 60px 20px;
   position: relative;
   z-index: 10;
@@ -115,6 +118,17 @@ $font-stack: 'Lato', sans-serif;
     margin: 40px 0;
     opacity: 0;
     transition: opacity .5s .5s;
+  }
+  a {
+    transition: .5s;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #101010;
+    &:hover {
+      background-color: #fff;
+      transition: .5s;
+    }
   }
 }
 

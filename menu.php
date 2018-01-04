@@ -3,10 +3,9 @@
 		<span class="navigation-menu__bars"></span>
 	</div>
 	<ul class="menu-list">
-		<li class="menu-list__item">Menu Item 1</li>
-		<li class="menu-list__item">Menu Item 2</li>
-		<li class="menu-list__item">Menu Item 3</li>
-		<li class="menu-list__item">Menu Item 4</li>
-		<li class="menu-list__item">Menu Item 5</li>
+		<li class="menu-list__item"><a href="#">Обо мне</a></li>
+		<li class="menu-list__item"><a href="#">Галерея</a></li>
+		<li class="menu-list__item"><a href="#">Блог</a></li>
+		<li class="menu-list__item"><a href="#">Контакты</a></li>
 	</ul>
 </nav>
