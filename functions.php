@@ -54,3 +54,28 @@ function get_page() {
 			break;
 	}
 }
+
+/**
+ * Upload images function
+ *
+ */
+function upload_img() {
+	$dir_img = './images';
+	$image   = scandir( $dir_img );
+	foreach ( $image as $index => $img ) {
+		if ( $img == '.' || $img == '..' ) {
+			unset ( $image [ $index ] );
+		}
+	}
+
+	$image = array_values( $image );
+	$image_pattern = '<div class="col-md-3 col-sm-6 col-xs-12 img-block" style="background-image: url(./images/%image%); ">' . '</div>';
+
+	$image_html = [];
+	foreach ( $image as $img ) {
+		$image_html[] = str_replace( '%image%', $img, $image_pattern );
+	}
+	$block      = '';
+	$image_html = implode( $image_html );
+	echo $image_html;
+}

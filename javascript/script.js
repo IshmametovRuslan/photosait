@@ -81,4 +81,7 @@ $( document ).ready( function () {
 			$( '.js-nav-menu' ).removeClass( 'navigation-menu--open' );
 		}
 	} );
+
+	var imgBlockWidth = $('.img-block').width();
+	$('.img-block').height(imgBlockWidth);
 } );

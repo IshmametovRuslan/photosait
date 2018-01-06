@@ -1,5 +1,6 @@
 @import "menu.css";
 @import url('https://fonts.googleapis.com/css?family=Kurale|Prata|Rubik|Ubuntu|Comfortaa');
+
 @about_me_font: 'Comfortaa', cursive;
 @about_me_font_color: #d0d0d0;
 @main_font: 'Prata', serif;
@@ -10,7 +11,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 
 	/* Стили для основной надписи */
 
@@ -172,19 +173,13 @@ body {
 	.gallery-block {
 		background: @dark_grey;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		.gallery-grid {
 			padding-top: 200px;
 			.img-block {
+				background-position: center;
+				background-size: cover;
 				padding: 10px;
-				background: white;
-				height: auto;
-				border: 2px solid red;
-				img {
-
-					width: 100%;
-					height: auto;
-				}
 			}
 		}
 	}
