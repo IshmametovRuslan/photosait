@@ -1,8 +1,10 @@
 @import "menu.css";
-@import url('https://fonts.googleapis.com/css?family=Kurale|Prata|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Kurale|Prata|Rubik|Ubuntu|Comfortaa');
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   /* Стили для основной надписи */
   /* Стили для слайдера */
 }
@@ -133,19 +135,24 @@ body .about-me-block {
 }
 body .about-me-block .about-me-content {
   padding-top: 100px;
-  color: #999;
+  color: #d0d0d0;
   height: 100%;
 }
 body .about-me-block .about-me-content h2 {
   text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 3.5rem;
 }
 body .about-me-block .about-me-content .about-text-img {
   padding-top: 30px;
 }
 body .about-me-block .about-me-content .about-text-img .about-me-photo {
-  float: left;
   background: url('../images/DSC_782633.jpg') center no-repeat;
   background-size: cover;
-  width: 300px;
-  height: 400px;
+  height: 350px;
+}
+body .about-me-block .about-me-content .about-text-img .about-me-text {
+  padding: 0px 0px 0px 100px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2rem;
 }
