@@ -127,5 +127,5 @@ body #block-for-slider #viewport #nav-btns .slide-nav-btn:hover {
   cursor: pointer;
 }
 body .about {
-  background-color: #d3d3d3;
+  background-color: #d3d3d3 !important;
 }
