@@ -4,8 +4,8 @@
 
 .navigation-menu__bars, .navigation-menu__bars::before, .navigation-menu__bars::after {
   cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
+  border-radius: 2px;
+  height: 4px;
   width: 30px;
   background: #fff;
   position: absolute;
@@ -72,17 +72,17 @@
     cursor: pointer;
     height: 30px;
     position: absolute;
-    right: -40px;
-    top: 5px;
+    right: -100px;
+    top: 70px;
     width: 30px; }
   .navigation-menu__bars::before, .navigation-menu__bars::after {
     content: ''; }
   .navigation-menu__bars::before {
     left: 0;
-    top: -8px; }
+    top: -9px; }
   .navigation-menu__bars::after {
     left: 0;
-    top: 8px; }
+    top: 9px; }
   .navigation-menu .copy-main {
     position: absolute;
     bottom: -10px;

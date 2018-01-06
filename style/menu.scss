@@ -11,8 +11,8 @@ $font-stack: 'Lato', sans-serif;
 
 %bars {
   cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
+  border-radius: 2px;
+  height: 4px;
   width: 30px;
   background: $menu-icons-color;
   position: absolute;
@@ -79,8 +79,8 @@ $font-stack: 'Lato', sans-serif;
     cursor: pointer;
     height: 30px;
     position: absolute;
-    right: -40px;
-    top: 5px;
+    right: -100px;
+    top: 70px;
     width: 30px;
   }
 
@@ -95,12 +95,12 @@ $font-stack: 'Lato', sans-serif;
 
     &::before {
       left: 0;
-      top: -8px;
+      top: -9px;
     }
 
     &::after {
       left: 0;
-      top: 8px;
+      top: 9px;
     }
   }
   .copy-main {
