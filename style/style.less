@@ -4,12 +4,13 @@
 @about_me_font_color: #d0d0d0;
 @main_font: 'Prata', serif;
 @main_font_color: #fff;
+@dark_grey: #191919;
 
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 
 	/* Стили для основной надписи */
 
@@ -141,7 +142,7 @@ body {
 		}
 	}
 	.about-me-block {
-		background-color: #191919;
+		background-color: @dark_grey;
 		width: 100%;
 		height: 100%;
 		.about-me-content {
@@ -164,6 +165,25 @@ body {
 					padding: 0px 0px 0px 100px;
 					font-family: @about_me_font;
 					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+	.gallery-block {
+		background: @dark_grey;
+		width: 100%;
+		height: 100%;
+		.gallery-grid {
+			padding-top: 200px;
+			.img-block {
+				padding: 10px;
+				background: white;
+				height: auto;
+				border: 2px solid red;
+				img {
+
+					width: 100%;
+					height: auto;
 				}
 			}
 		}

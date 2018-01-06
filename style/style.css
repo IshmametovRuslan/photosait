@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   /* Стили для основной надписи */
   /* Стили для слайдера */
 }
@@ -155,4 +155,22 @@ body .about-me-block .about-me-content .about-text-img .about-me-text {
   padding: 0px 0px 0px 100px;
   font-family: 'Comfortaa', cursive;
   font-size: 1.2rem;
+}
+body .gallery-block {
+  background: #191919;
+  width: 100%;
+  height: 100%;
+}
+body .gallery-block .gallery-grid {
+  padding-top: 200px;
+}
+body .gallery-block .gallery-grid .img-block {
+  padding: 10px;
+  background: white;
+  height: auto;
+  border: 2px solid red;
+}
+body .gallery-block .gallery-grid .img-block img {
+  width: 100%;
+  height: auto;
 }
