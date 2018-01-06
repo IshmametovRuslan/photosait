@@ -1,7 +1,4 @@
 <div class="main-page-content">
-	<div class="main-menu">
-		<?php include 'menu.php';?>
-	</div>
 	<div class="main-page-text">
 		<div>
 			<h2>Руслан Ишмаметов</h2>

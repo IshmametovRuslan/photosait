@@ -1,12 +1,11 @@
 @import "menu.css";
 @import url('https://fonts.googleapis.com/css?family=Kurale|Prata|Rubik');
 
-
 body {
 	margin: 0;
 	padding: 0;
 
-/* Стили для основной надписи */
+	/* Стили для основной надписи */
 
 	.main-page-text {
 		position: absolute;
@@ -23,13 +22,13 @@ body {
 			h2 {
 				font-size: 4.5rem;
 				font-family: 'Prata', serif;
-				text-shadow:0px 0px 10px rgba(0, 0, 0, 0.8);
+				text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 			}
 
 			h3 {
 				font-size: 2.5rem;
 				font-family: 'Kurale', serif;
-				text-shadow:0px 0px 10px rgba(0, 0, 0, 0.8);
+				text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 			}
 			.gallery-btn {
 				margin: 40px auto;
@@ -38,14 +37,14 @@ body {
 		}
 	}
 
-/* Стили для слайдера */
+	/* Стили для слайдера */
 
 	#block-for-slider {
 		width: 100%;
 		min-width: 400px;
 		margin: 0 auto;
 
-		#viewport{
+		#viewport {
 			width: 100%;
 			display: table;
 			position: relative;
@@ -74,7 +73,7 @@ body {
 					padding: 0;
 				}
 				& li {
-					width: calc(100%/4);
+					width: calc(100% / 4);
 					list-style: none;
 					display: inline;
 					float: left;
@@ -136,6 +135,12 @@ body {
 		}
 	}
 	.about {
-		background-color: #d3d3d3 !important;
+		background-color: #191919;
+		width: 100%;
+		height: 100%;
+		.about-text {
+			background-color: #d3d3d3;
+			height: 100%;
+		}
 	}
 }
