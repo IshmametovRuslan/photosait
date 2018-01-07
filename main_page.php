@@ -7,9 +7,7 @@
 				<a href="?p=gallery"><button class="btn btn-outline-secondary btn-lg">В галерею</button></a>
 			</div>
 		</div>
-
 	</div>
-
 	<div class=main-page-slider">
 		<?php include 'slider.php'; ?>
 	</div>

@@ -4,9 +4,10 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  /* Стили для основной надписи */
-  /* Стили для слайдера */
+  /*-- Стили для основной надписи --*/
+  /*-- Стили для слайдера --*/
+  /*--Стили для блока "Обо мне"--*/
+  /*--Стили для галереи изображений--*/
 }
 body .main-page-text {
   position: absolute;
@@ -132,6 +133,7 @@ body .about-me-block {
   background-color: #191919;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
 }
 body .about-me-block .about-me-content {
   padding-top: 100px;
@@ -147,7 +149,7 @@ body .about-me-block .about-me-content .about-text-img {
   padding-top: 30px;
 }
 body .about-me-block .about-me-content .about-text-img .about-me-photo {
-  background: url('../images/images-gallery/DSC_782633.jpg') center no-repeat;
+  background: url('../images/DSC_782633.jpg') center no-repeat;
   background-size: cover;
   height: 350px;
 }
@@ -159,19 +161,30 @@ body .about-me-block .about-me-content .about-text-img .about-me-text {
 body .gallery-block {
   background: #191919;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 body .gallery-block .gallery-grid {
   padding-top: 200px;
 }
 body .gallery-block .gallery-grid .img-block {
-  background-color: #191919;
   background-position: center;
   background-size: cover;
   margin: 10px auto;
   transition: all 0.5s ease-in-out;
 }
 body .gallery-block .gallery-grid .img-block:hover {
-  transform: scale(1.1);
+  transform: scale(0.95);
+  filter: sepia(300%);
   cursor: pointer;
+}
+body .blog-block {
+  background-color: #191919;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+body .footer {
+  position: relative;
+  bottom: 0px;
 }

@@ -11,9 +11,8 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
 
-	/* Стили для основной надписи */
+	/*-- Стили для основной надписи --*/
 
 	.main-page-text {
 		position: absolute;
@@ -45,7 +44,7 @@ body {
 		}
 	}
 
-	/* Стили для слайдера */
+	/*-- Стили для слайдера --*/
 
 	#block-for-slider {
 		width: 100%;
@@ -142,10 +141,15 @@ body {
 
 		}
 	}
+
+	/*--Стили для блока "Обо мне"--*/
+
 	.about-me-block {
 		background-color: @dark_grey;
 		width: 100%;
 		height: 100%;
+		min-height: 100vh;
+
 		.about-me-content {
 			padding-top: 100px;
 			color: @about_me_font_color;
@@ -158,7 +162,7 @@ body {
 			.about-text-img {
 				padding-top: 30px;
 				.about-me-photo {
-					background: url('../images/images-gallery/DSC_782633.jpg') center no-repeat;
+					background: url('../images/DSC_782633.jpg') center no-repeat;
 					background-size: cover;
 					height: 350px;
 				}
@@ -170,23 +174,40 @@ body {
 			}
 		}
 	}
+
+	/*--Стили для галереи изображений--*/
 	.gallery-block {
 		background: @dark_grey;
 		width: 100%;
-		height: 100vh;
+		height: 100%;
+		min-height: 100vh;
+
 		.gallery-grid {
 			padding-top: 200px;
+
 			.img-block {
-				background-color: @dark_grey;
 				background-position: center;
 				background-size: cover;
 				margin: 10px auto;
-				transition: all 0.5s ease-in-out;
+				transition: all .5s ease-in-out;
+
 				&:hover {
-					transform: scale(1.1);
+					transform: scale(0.95);
+					filter: sepia(300%);
 					cursor: pointer;
 				}
 			}
 		}
+	}
+
+	.blog-block {
+		background-color: @dark_grey;
+		width: 100%;
+		min-height: 100vh;
+		height: 100%;
+	}
+	.footer {
+		position: relative;
+		bottom: 0px;
 	}
 }
