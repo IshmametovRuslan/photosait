@@ -147,7 +147,7 @@ body .about-me-block .about-me-content .about-text-img {
   padding-top: 30px;
 }
 body .about-me-block .about-me-content .about-text-img .about-me-photo {
-  background: url('../images/DSC_782633.jpg') center no-repeat;
+  background: url('../images/images-gallery/DSC_782633.jpg') center no-repeat;
   background-size: cover;
   height: 350px;
 }
@@ -165,7 +165,13 @@ body .gallery-block .gallery-grid {
   padding-top: 200px;
 }
 body .gallery-block .gallery-grid .img-block {
+  background-color: #191919;
   background-position: center;
   background-size: cover;
-  padding: 10px;
+  margin: 10px auto;
+  transition: all 0.5s ease-in-out;
+}
+body .gallery-block .gallery-grid .img-block:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }

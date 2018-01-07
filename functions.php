@@ -60,7 +60,7 @@ function get_page() {
  *
  */
 function upload_img() {
-	$dir_img = './images';
+	$dir_img = './images/images-gallery';
 	$image   = scandir( $dir_img );
 	foreach ( $image as $index => $img ) {
 		if ( $img == '.' || $img == '..' ) {
@@ -69,13 +69,12 @@ function upload_img() {
 	}
 
 	$image = array_values( $image );
-	$image_pattern = '<div class="col-md-3 col-sm-6 col-xs-12 img-block" style="background-image: url(./images/%image%); ">' . '</div>';
+	$image_pattern = '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><div class="img-block" style="background-image: url('.$dir_img.'/%image%); ">' . '</div></div>';
 
 	$image_html = [];
 	foreach ( $image as $img ) {
 		$image_html[] = str_replace( '%image%', $img, $image_pattern );
 	}
-	$block      = '';
 	$image_html = implode( $image_html );
 	echo $image_html;
 }
