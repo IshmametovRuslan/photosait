@@ -184,6 +184,10 @@ body .blog-block {
   min-height: 100vh;
   height: 100%;
 }
+body .blog-block .blog-content {
+  background-color: #d3d3d3;
+  height: 100%;
+}
 body .footer {
   position: relative;
   bottom: 0px;
