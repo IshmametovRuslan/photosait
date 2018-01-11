@@ -178,16 +178,6 @@ body .gallery-block .gallery-grid .img-block:hover {
   filter: sepia(300%);
   cursor: pointer;
 }
-body .blog-block {
-  background-color: #191919;
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-}
-body .blog-block .blog-content {
-  background-color: #d3d3d3;
-  height: 100%;
-}
 body .footer {
   position: relative;
   bottom: 0px;
