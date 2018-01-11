@@ -63,9 +63,13 @@ function upload_img() {
 	$dir_img = './images/images-gallery';
 	$image   = scandir( $dir_img );
 	foreach ( $image as $index => $img ) {
-		if ( $img == '.' || $img == '..' ) {
+		if ( $img == '.' || $img == '..'  ) {
 			unset ( $image [ $index ] );
 		}
+		$image_name = basename($img, '.jpg');
+		echo $image_name;
+		$image_name[] = explode('', $image_name);
+		print_r($image_name);
 	}
 
 	$image = array_values( $image );
@@ -75,6 +79,7 @@ function upload_img() {
 	foreach ( $image as $img ) {
 		$image_html[] = str_replace( '%image%', $img, $image_pattern );
 	}
+
 	$image_html = implode( $image_html );
 	echo $image_html;
 }

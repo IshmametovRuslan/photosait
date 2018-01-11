@@ -82,6 +82,32 @@ $( document ).ready( function () {
 		}
 	} );
 
+	//Высота блока с картинкой равна ширине
+
 	var imgBlockWidth = $('.img-block').width();
 	$('.img-block').height(imgBlockWidth);
+
+	//Модальное окно
+
+	$('.img-block').click( function(event){
+		event.preventDefault();
+		var ssilka = $('.img-block').attr('href');
+		console.log(ssilka);
+		$('#overlay').fadeIn(400, // анимируем показ обложки
+			function(){ // далее показываем мод. окно
+				$('#modal')
+					.css('display', 'block')
+					.animate({opacity: 1, top: '50%'}, 200);
+			});
+	});
+
+	$(document).click( function(){
+		$('#modal_form')
+			.animate({opacity: 0, top: '45%'}, 200,  // уменьшаем прозрачность
+				function(){ // пoсле aнимaции
+					$(this).css('display', 'none'); // скрываем окно
+					$('#overlay').fadeOut(400); // скрывaем пoдлoжку
+				}
+			);
+	});
 } );
