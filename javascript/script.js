@@ -89,25 +89,29 @@ $( document ).ready( function () {
 
 	//Модальное окно
 
-	$('.img-block').click( function(event){
-		event.preventDefault();
-		var ssilka = $('.img-block').attr('href');
-		console.log(ssilka);
-		$('#overlay').fadeIn(400, // анимируем показ обложки
-			function(){ // далее показываем мод. окно
-				$('#modal')
-					.css('display', 'block')
-					.animate({opacity: 1, top: '50%'}, 200);
-			});
-	});
 
-	$(document).click( function(){
-		$('#modal_form')
-			.animate({opacity: 0, top: '45%'}, 200,  // уменьшаем прозрачность
-				function(){ // пoсле aнимaции
-					$(this).css('display', 'none'); // скрываем окно
-					$('#overlay').fadeOut(400); // скрывaем пoдлoжку
-				}
-			);
+	$('.img-block').click(function loadModal() {
+
+		var image_url = $(this).css('background-image');
+
+		$('.modal-bg').fadeIn( 500, function () {
+			$('.modal-bg').css({
+				'display': 'block',
+			});
+			$('.modal-window').css({
+				'display': 'flex'
+			});
+			$('.modal-image').css({
+				'background-image': image_url,
+				'background-size': 'cover',
+				'background-position': 'center'
+
+			})
+		});
 	});
+	$('.close-modal, .modal-window').click( function closeModal() {
+		$('.modal-bg, .modal-window').css({
+			'display': 'none'
+		});
+	})
 } );

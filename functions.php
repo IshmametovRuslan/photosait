@@ -69,7 +69,8 @@ function upload_img() {
 	}
 
 	$image = array_values( $image );
-	$image_pattern = '<div class="col-md-4 col-sm-6 col-xs-12"><div class="img-block"  style="background-image: url('.$dir_img.'/%image%); ">' . '</div></div>';
+	$image_pattern = '<div class="col-md-4 col-sm-6 col-xs-12"><div class="img-block"  
+style="background-image: url('.$dir_img.'/%image%); ">' . '</div></div>';
 
 	$image_html = [];
 	foreach ( $image as $img ) {
